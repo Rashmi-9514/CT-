@@ -25,8 +25,8 @@ public class MainActivity extends AppCompatActivity {
 
         HashMap<String, Object> profileUpdate = new HashMap<String, Object>();
 //Update pre-defined profile properties
-        profileUpdate.put("Name", "Jun Kun");
-        profileUpdate.put("Email", "jun@gmail.com");
+        profileUpdate.put("Name", "Jim Kim");
+        profileUpdate.put("Email", "jim@gmail.com");
 //Update custom profile properties
         profileUpdate.put("Plan Type", "Gold");
         profileUpdate.put("Favorite Food", "Pizza");
@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         // each of the below mentioned fields are optional
 // if set, these populate demographic information in the Dashboard
 
-        profileUpdate.put("Identity", 61026032);                    // String or number
+        profileUpdate.put("Identity", 610276032);                    // String or number
         profileUpdate.put("Phone", "+141555951234");                 // Phone (with the country code, starting with +)
         profileUpdate.put("Gender", "M");                           // Can be either M or F
         profileUpdate.put("Employed", "Y");                         // Can be either Y or N
