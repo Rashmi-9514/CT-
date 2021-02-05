@@ -60,8 +60,9 @@ public class MainActivity extends AppCompatActivity {
         String[] otherStuff = {"Jeans","Perfume"};
         profileUpdate.put("MyStuff", otherStuff);                   //String Array
 
-        clevertapDefaultInstance.pushProfile(profileUpdate);
-// event without properties
+        clevertapDefaultInstance.onUserLogin(profileUpdate);
+        //clevertapDefaultInstance.pushProfile(profileUpdate);
+        // event without properties
         clevertapDefaultInstance.pushEvent("Product viewed");
         // event with properties
         HashMap<String, Object> prodViewedAction = new HashMap<String, Object>();
