@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "86114454762",
+    "project_id": "ctpushn",
+    "storage_bucket": "ctpushn.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:86114454762:android:b4459a8c3b061a6d961b93",
+        "android_client_info": {
+          "package_name": "com.example.ctpushnotification"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "86114454762-52q81e2vvbecmea6i00mmgs2ehj7iavf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2CbdnhMB8_nkvyZRVGWGptveQl6Zm3Fs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "86114454762-52q81e2vvbecmea6i00mmgs2ehj7iavf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
