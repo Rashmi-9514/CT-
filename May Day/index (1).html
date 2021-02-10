@@ -1,0 +1,68 @@
+
+<html>
+<head>
+  <link rel="manifest" href="manifest.json">
+
+<script type="text/javascript">
+
+     var clevertap = {event:[], profile:[], account:[], onUserLogin:[], notifications:[], privacy:[]};
+ // replace with the CLEVERTAP_ACCOUNT_ID with the actual ACCOUNT ID value from your Dashboard -> Settings page
+clevertap.account.push({"id": "TEST-RZ7-Z94-K95Z"});
+clevertap.privacy.push({optOut: false}); //set the flag to true, if the user of the device opts out of sharing their data
+clevertap.privacy.push({useIP: true}); //set the flag to true, if the user agrees to share their IP data
+ (function () {
+		 var wzrk = document.createElement('script');
+		 wzrk.type = 'text/javascript';
+		 wzrk.async = true;
+		 wzrk.src = ('https:' == document.location.protocol ? 'https://d2r1yp2w7bby2u.cloudfront.net' : 'http://static.clevertap.com') + '/js/a.js';
+		 var s = document.getElementsByTagName('script')[0];
+		 s.parentNode.insertBefore(wzrk, s);
+  })();
+clevertap.onUserLogin.push({
+ "Site": {
+   "Name": "May Day", // String
+   "Identity": 610216032,  // String or number
+   "Email": "md@gmail.com", // Email address of the user
+   "Phone": "+91155551234",  // Phone (with the country code)
+   "Gender": "M", // Can be either M or F
+   "DOB": new Date(), // Date of Birth. Date object
+
+// optional fields. controls whether the user will be sent email, push etc.
+   "MSG-email": true, // Disable email notifications
+   "MSG-push": true,   // Enable push notifications
+   "MSG-sms": true,    // Enable sms notifications
+   "MSG-whatsapp": true, // Enable WhatsApp notifications
+ }
+});
+clevertap.profile.push({
+ "Site": {
+   "Identity": 610216032,  // String or number
+   "Email": "md@gmail.com", // Email address of the user
+// update some custom profile property fields 
+   "Plan-type":"Gold",
+   "Account status":"active"
+ }
+});
+
+//Event without event properties
+clevertap.event.push("Product Viewed");
+
+//Event with event properties
+clevertap.event.push("Product Viewed", {
+  "Product name":"Casio Chronograph Watch",
+  "Category":"Mens Accessories",
+  "Price":59.99,  //Price should have a numeric datatype (int, float, etc)
+});
+
+
+</script>
+
+</head>
+<body>
+<h1><center>Web Push</center></h1>
+
+<script src="clevertap_sw.js"></script>
+<script src="notification_prompt.js"></script>
+
+</body>
+</html>
